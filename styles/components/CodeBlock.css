@@ -1,0 +1,44 @@
+.code-block {
+  border-radius: 10px;
+  padding: 10px;
+  background: #2d2d2d;
+  margin: 15px;
+}
+
+.code-block pre::-webkit-scrollbar {
+  background: transparent;
+  height: 10px;
+}
+
+.code-block pre::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.code-block pre::-webkit-scrollbar-button {
+  width: 1em;
+}
+
+.code-block__header {
+  display: flex;
+  padding: 0.5em 1em 0 1em;
+}
+
+.code-block__header--circle1,
+.code-block__header--circle2,
+.code-block__header--circle3 {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 0.4em;
+}
+
+.code-block__header--circle1 {
+  background: #ff5f57;
+}
+.code-block__header--circle2 {
+  background: #ffbc2d;
+}
+.code-block__header--circle3 {
+  background: #27c93f;
+}
