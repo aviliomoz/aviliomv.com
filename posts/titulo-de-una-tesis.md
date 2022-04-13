@@ -3,6 +3,7 @@ title: "¿Cómo elaborar el título de una tesis?"
 date: "17/03/2022"
 description: "¿Cómo elaborar el título de una tesis?"
 thumbnailUrl: "/notes_pen.jpg"
+tags: ["Metodología"]
 ---
 
 ## ¿Cómo elaborar el título de una tesis?

@@ -3,6 +3,7 @@ title: "Selección del problema de investigación"
 date: "22/01/2022"
 description: "¿Cómo seleccionar correctamente el tema a investigar?"
 thumbnailUrl: "/choices.jpg"
+tags: ["Metodología"]
 ---
 
 ## Selección del problema de investigación

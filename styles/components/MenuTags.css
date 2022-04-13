@@ -19,15 +19,21 @@
   display: flex;
 }
 
-.menu-tags ul li a {
+.menu-tags ul li span {
   color: #817f7f;
   font-size: 13px;
   font-weight: 400;
+  cursor: pointer;
 }
 
-.menu-tags ul li a:hover {
+.menu-tags ul li span:hover {
   color: #202124;
   font-weight: 500;
+}
+
+.activeTag {
+  color: #202124 !important;
+  font-weight: 500 !important;
 }
 
 .menu-tags__icon {
@@ -43,7 +49,7 @@
   color: #817f7f;
 }
 
-@media (min-width: 768px)  {  
+@media (min-width: 768px) {
   .menu-tags {
     display: block;
   }

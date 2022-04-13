@@ -3,6 +3,7 @@ title: ¿Realizar una investigación es una tarea difícil?
 date: '16/12/2021'
 description: Aprende a investigar de la manera correcta
 thumbnailUrl: '/books.jpg'
+tags: ["Metodología"]
 ---
 
 ## ¿Realizar una investigación es realmente una tarea difícil?

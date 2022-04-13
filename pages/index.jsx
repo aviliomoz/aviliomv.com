@@ -2,14 +2,20 @@ import fs from "fs";
 import path from "path";
 
 import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import matter from "gray-matter";
 import moment from "moment";
 
 import PostCardMedium from "../components/PostCardMedium";
 import SectionCard from "../containers/SectionCard";
+import { countTags } from "../utils/tags";
+import { updateTags } from "../redux/slices/tagsSlice";
 
 const Home = ({ posts }) => {
+  const dispatch = useDispatch();
+
   const [externalPosts, setExternalPosts] = useState([]);
+  const { activeTag } = useSelector((state) => state.tags);
 
   useEffect(() => {
     fetch("/api/posts")
@@ -17,11 +23,25 @@ const Home = ({ posts }) => {
       .then((posts) => setExternalPosts(posts));
   }, []);
 
+  useEffect(() => {
+    dispatch(updateTags(countTags(posts)));
+  }, [posts]);
+
+  const filterPosts = (postsData) => {
+    if (activeTag === "") return postsData;
+
+    return postsData.filter((post) =>
+      post.frontMatter.tags.includes(activeTag)
+    );
+  };
+
+  const filteredPosts = filterPosts(posts);
+
   return (
     <div className="home">
       <section className="home__blog">
         <SectionCard title="Blog">
-          {posts
+          {filteredPosts
             .sort(
               (a, b) =>
                 Number(moment(b.frontMatter.date, "DD/MM/YYYY")) -

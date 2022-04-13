@@ -3,6 +3,7 @@ title: "Las fuentes de información"
 date: "20/02/2022"
 description: "Conoce las principlales fuentes de información para tus investigaciones"
 thumbnailUrl: "/library.jpg"
+tags: ["Metodología"]
 ---
 
 ## Las fuentes de información

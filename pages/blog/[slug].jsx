@@ -8,13 +8,18 @@ import Image from "next/image";
 import CodeBlock from "../../components/CodeBlock";
 
 const PostPage = ({ postContent, postMetadata }) => {
+
   return (
     <div className="post-page">
       <ReactMarkdown
         children={postContent}
         components={{
           code: CodeBlock,
-          li: (li) => <li style={{marginLeft: "20px", marginBottom: "8px"}}>{li.children}</li>,
+          li: (li) => (
+            <li style={{ marginLeft: "20px", marginBottom: "8px" }}>
+              {li.children}
+            </li>
+          ),
           a: (a) => (
             <a target={"_blank"} style={{ color: "#0093AB" }} href={a.href}>
               <abbr title={a.title}>{a.children}</abbr>

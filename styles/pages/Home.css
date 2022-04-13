@@ -8,6 +8,7 @@
 .home__blog {
   /* width: calc(65% - 7.5px); */
   width: 100%;
+  min-height: calc(100vh - 100px);
 }
 
 .home__links {
