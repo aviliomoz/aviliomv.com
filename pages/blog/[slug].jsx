@@ -8,11 +8,9 @@ import Image from "next/image";
 import CodeBlock from "../../components/CodeBlock";
 
 const PostPage = ({ postContent, postMetadata }) => {
-
   return (
     <div className="post-page">
       <ReactMarkdown
-        children={postContent}
         components={{
           code: CodeBlock,
           li: (li) => (
@@ -21,7 +19,12 @@ const PostPage = ({ postContent, postMetadata }) => {
             </li>
           ),
           a: (a) => (
-            <a target={"_blank"} style={{ color: "#0093AB" }} href={a.href}>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "#0093AB" }}
+              href={a.href}
+            >
               <abbr title={a.title}>{a.children}</abbr>
             </a>
           ),
@@ -36,12 +39,19 @@ const PostPage = ({ postContent, postMetadata }) => {
                   margin: "50px 0px",
                 }}
               >
-                <Image height="400" width="600" src={"/" + image.src} />
+                <Image
+                  height="400"
+                  width="600"
+                  src={"/" + image.src}
+                  alt={image.src}
+                />
               </div>
             );
           },
         }}
-      />
+      >
+        {postContent}
+      </ReactMarkdown>
     </div>
   );
 };

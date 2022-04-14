@@ -164,11 +164,9 @@ const CodeBlock = ({ className, children }) => {
         <div className="code-block__header--circle2"></div>
         <div className="code-block__header--circle3"></div>
       </div>
-      <SyntaxHighlighter
-        style={tomorrow}
-        language={language}
-        children={children}
-      />
+      <SyntaxHighlighter style={tomorrow} language={language}>
+        {children}
+      </SyntaxHighlighter>
     </div>
   );
 };

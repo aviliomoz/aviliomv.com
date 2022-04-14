@@ -25,7 +25,7 @@ const Home = ({ posts }) => {
 
   useEffect(() => {
     dispatch(updateTags(countTags(posts)));
-  }, [posts]);
+  }, [posts, dispatch]);
 
   const filterPosts = (postsData) => {
     if (activeTag === "") return postsData;
@@ -76,7 +76,7 @@ const Home = ({ posts }) => {
                   }}
                 />
 
-                <a className="global__link" target={"_blank"} href={post.url}>
+                <a className="global__link" target={"_blank"} rel="noreferrer" href={post.url}>
                   {post.title}
                 </a>
               </div>
