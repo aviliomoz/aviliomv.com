@@ -19,17 +19,17 @@ const MenuTags = () => {
         <li>
           <div className="menu-tags__icon">{tags.methodology}</div>
           <span
-            className={activeTag === "Metodología" ? "activeTag" : ""}
             onClick={() => handleSetActiveTag("Metodología")}
+            className={activeTag === "Metodología" ? "activeTag" : ""}
           >
             Metodología
           </span>
         </li>
-        <li>
+        {/* <li>
           <div className="menu-tags__icon">{tags.statistics}</div>
           <span
-            className={activeTag === "Estadística" ? "activeTag" : ""}
             onClick={() => handleSetActiveTag("Estadística")}
+            className={activeTag === "Estadística" ? "activeTag" : ""}
           >
             Estadística
           </span>
@@ -42,7 +42,7 @@ const MenuTags = () => {
           >
             Análisis de datos
           </span>
-        </li>
+        </li> */}
       </ul>
     </section>
   );

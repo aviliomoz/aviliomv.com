@@ -1,12 +1,10 @@
-import Image from "next/image";
-
 const about = () => {
   return (
     <div className="about">
       <div>
-        <Image
+        <img
           className="about-img-profile"
-          src="/about-img-1.jpg"
+          src="/about-img-1.png"
           alt="about-img-profile"
         />
       </div>
@@ -27,22 +25,22 @@ const about = () => {
         </p>
       </div>
       <div>
-        <Image
+        <img
           className="about-img-small"
           src="/about-img-2.png"
           alt="about-img-2"
         />
-        <Image
+        <img
           className="about-img-small"
           src="/about-img-3.png"
           alt="about-img-3"
         />
-        <Image
+        <img
           className="about-img-small"
           src="/about-img-4.png"
           alt="about-img-4"
         />
-        <Image
+        <img
           className="about-img-small"
           src="/about-img-5.png"
           alt="about-img-5"
@@ -59,7 +57,7 @@ const about = () => {
         </p>
       </div>
       <div>
-        <Image src="/about-img-6.png" alt="about-img-6" />
+        <img src="/about-img-6.png" alt="about-img-6" />
       </div>
       <div>
         <p>
@@ -71,7 +69,7 @@ const about = () => {
         </p>
       </div>
       <div>
-        <Image src="/about-img-7.png" alt="about-img-7" />
+        <img src="/about-img-7.png" alt="about-img-7" />
       </div>
       <div>
         <p>

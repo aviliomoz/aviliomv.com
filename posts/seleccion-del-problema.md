@@ -20,7 +20,7 @@ Antes de continuar con el tema de la selección del problema de investigación, 
 
 En el campo metodológico ambos términos poseen significados diferentes. En este sentido, Valarino, Yáber y Cembarain (2015, pp. 77-78), refieren que el _tema_ es el tópico general en el cual se circunscribe el problema por ser investigado; mientras que el _problema de investigación_ es un aspecto específico del tema seleccionado, restringiéndolo a los conceptos propios de una disciplina o subdisciplina.
 
-[![imagen1_Tema_problema](Tema_problema.png)
+![imagen1_Tema_problema](Tema_problema.png)
 
 Es recomendable que el estudiante primeramente se contextualice en un tema determinado con el cual se sienta identificado, ya sea por ser afín a sus intereses, por tener mayor dominio o conocimientos sobre este, por contar con el apoyo de personas o instituciones para desarrollarlo, u otra circunstancia favorable; y luego extraiga de ese tema las situaciones problemáticas concretas. Así, por ejemplo, suponiendo que un estudiante decide trabajar sobre los tributos, seguidamente debe ir delimitando el tema en componentes más concretos hasta obtener el problema de investigación, ya que el tema “los tributos” pueden ser analizados desde varios enfoques o dimensiones.
 
@@ -38,7 +38,7 @@ En esta línea de investigación, cito como ejemplo el trabajo de investigación
 
 En la siguiente figura se puede observar de manera gráfica este proceso de selección, hasta llegar a un problema específico.
 
-[![imagen2_Problema](Problema.png)
+![imagen2_Problema](Problema.png)
 
 El ejemplo planteado permite visualizar cómo se debe descomponer un tema hasta llegar a situaciones problemáticas concretas; pues, como lo señala Perujo (2009), “es necesario precisar qué queremos hacer, qué trozo de la realidad pretendemos abarcar, en qué sitio concreto vamos a desenvolvernos para, a partir de ahí, disponer todos los esfuerzos en una única dirección bien definida” (p.64).
 
@@ -54,7 +54,7 @@ La tarea de los profesores y tutores es orientar a los alumnos para que estos lo
 
 **a) La experiencia del investigador.** Lo más razonable es que el investigador, en la medida de sus posibilidades, seleccione un tema sobre el cual posee alguna experiencia, o por lo menos con el que se encuentre familiarizado. No es recomendable escoger una situación problemática cuyo sustento teórico es totalmente desconocido para el investigador. Se tiene el ejemplo de [Farías y Tesén](https://pirhua.udep.edu.pe/handle/11042/4117), quienes hacen uso de su experiencia en ingeniería hidráulica para realizar una investigación en el Instituto de Hidráulica, Hidrología e Ingeniería Sanitaria de la Universidad de Piura (Perú).
 
-[![imagen3_Ejemplo1](Ejemplo1.png)]
+![imagen3_Ejemplo1](Ejemplo1.png)
 
 En el caso de un estudiante, que necesita seleccionar su problema de investigación para cumplir con su requisito de grado, es recomendable que centre su atención en aquellos temas vinculados con las asignaturas con las cuales sienta mayor afinidad, en las que obtuvo mejores rendimientos académicos, y, por consiguiente evitar seleccionar problemas de investigación, que se encuentren vinculados a asignaturas que le resultaron difíciles de superar, o asignaturas que le resultaron poco significativas en su formación académica, ya que esto resulta poco motivador en el proceso de investigación.
 
@@ -62,7 +62,7 @@ En el caso de un estudiante, que necesita seleccionar su problema de investigaci
 
 Este aspecto se observa en la investigación de [Contreras, J. (2018)](http://saber.ucv.ve/handle/10872/19622), quien formula por primera vez un método para evaluar la vulnerabilidad de aguas subterráneas en operaciones petroleras en estratos subyacentes. En esta investigación se indica que el requerimiento técnico para la evaluación de esta vulnerabilidad no estaba formalmente establecida ni definida, y, por tanto, el desarrollo o aplicación de un método paramétrico en este contexto en la industria petrolera comienza con ese estudio.
 
-[![imagen5_Ejemplo2](Ejemplo2.png)]
+![imagen5_Ejemplo2](Ejemplo2.png)
 
 **c) Los resultados contradictorios de otras investigaciones.** En algunas ocasiones se detectan investigaciones con resultados contradictorios entre sí, lo cual es un motivo válido para evaluar los enfoques y procedimientos realizados por los diversos investigadores con el fin de descubrir los puntos vulnerables y divergentes, y de esta manera obtener conclusiones que expliquen el fenómeno estudiado.
 
@@ -104,7 +104,7 @@ Por ejemplo, en la investigación de [Lara (2015)](http://dx.doi.org/10.4067/S07
 
 Esta situación la podemos observar en la investigación de [Hernández (2019)](https://dialnet.unirioja.es/servlet/tesis?codigo=223849), donde se realiza una crítica al método fenomenológico tal como lo concibe Husserl, haciendo uso del filosófico-gramatical que Wittgenstein propone en sus Investigaciones filosóficas.
 
-[![imagen6.Tesis_doctoral](Imagen6.Tesis_doctoral.png)]
+![imagen6.Tesis_doctoral](Imagen6.Tesis_doctoral.png)
 
 **k) Ideologías culturales, valores, conflictos sociales, tecnológicos y morales, típicos de un contexto específico.** Las necesidades del ser humano como individuo y como ente social impulsan la dinámica científica y su evolución, marcado especialmente por los aspectos culturales, sociales y antropológicos, así como tecnológicos y morales. En este campo la riqueza investigativa no tiene límites. Este caso se observa en la investigación de [Bodenhofer (2018)](https://repositorio.uchile.cl/handle/2250/170670), donde se mezcla una serie de elementos vinculados a la sexualidad y los conflictos sociales y morales que se derivan de esta, a través de una investigación para describir las experiencias de actores cisgénero y transgénero de comunidades educativas.
 
