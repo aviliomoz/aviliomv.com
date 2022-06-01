@@ -1,13 +1,11 @@
-import fs from "fs";
-import path from "path";
-
-import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
 
 import CodeBlock from "../../components/CodeBlock";
+import { getPostBySlug, getPosts } from "../../utils/posts";
+import { getImageURL } from "../../utils/images";
 
-const PostPage = ({ postContent, postMetadata }) => {
+const PostPage = ({ post }) => {
   return (
     <div className="post-page">
       <ReactMarkdown
@@ -42,7 +40,7 @@ const PostPage = ({ postContent, postMetadata }) => {
                 <Image
                   height="400"
                   width="600"
-                  src={"/" + image.src}
+                  src={getImageURL(image.src)}
                   alt={image.src}
                 />
               </div>
@@ -50,17 +48,17 @@ const PostPage = ({ postContent, postMetadata }) => {
           },
         }}
       >
-        {postContent}
+        {post.content}
       </ReactMarkdown>
     </div>
   );
 };
 
 export const getStaticPaths = async () => {
-  const files = fs.readdirSync(path.join("posts"));
-  const paths = files.map((filename) => ({
+  const posts = await getPosts();
+  const paths = posts.map((post) => ({
     params: {
-      slug: filename.replace(".md", ""),
+      slug: post.slug,
     },
   }));
   return {
@@ -70,16 +68,10 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async ({ params: { slug } }) => {
-  const markdownWithMeta = fs.readFileSync(
-    path.join("posts", slug + ".md"),
-    "utf-8"
-  );
-  const { data: postMetadata, content: postContent } = matter(markdownWithMeta);
+  const post = await getPostBySlug(slug);
   return {
     props: {
-      postMetadata,
-      postContent,
-      slug,
+      post,
     },
   };
 };

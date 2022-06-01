@@ -12,6 +12,7 @@
 /* Containers */
 @import "./containers/Layout.css";
 @import "./containers/SectionCard.css";
+@import "./containers/AdminLayout.css";
 
 /* Pages */
 @import "./pages/Home.css";

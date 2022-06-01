@@ -1,51 +1,19 @@
-import fs from "fs";
-import path from "path";
-
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import matter from "gray-matter";
 import moment from "moment";
 
 import PostCardMedium from "../components/PostCardMedium";
 import SectionCard from "../containers/SectionCard";
-import { countTags } from "../utils/tags";
-import { updateTags } from "../redux/slices/tagsSlice";
+import { getPosts, getExternalPosts } from "../utils/posts";
 
-const Home = ({ posts }) => {
-  const dispatch = useDispatch();
-
-  const [externalPosts, setExternalPosts] = useState([]);
-  const { activeTag } = useSelector((state) => state.tags);
-
-  useEffect(() => {
-    fetch("/api/posts")
-      .then((res) => res.json())
-      .then((posts) => setExternalPosts(posts));
-  }, []);
-
-  useEffect(() => {
-    dispatch(updateTags(countTags(posts)));
-  }, [posts, dispatch]);
-
-  const filterPosts = (postsData) => {
-    if (activeTag === "") return postsData;
-
-    return postsData.filter((post) =>
-      post.frontMatter.tags.includes(activeTag)
-    );
-  };
-
-  const filteredPosts = filterPosts(posts);
-
+const Home = ({ posts, external_posts }) => {
   return (
     <div className="home">
       <section className="home__blog">
         <SectionCard title="Blog">
-          {filteredPosts
+          {posts
             .sort(
               (a, b) =>
-                Number(moment(b.frontMatter.date, "DD/MM/YYYY")) -
-                Number(moment(a.frontMatter.date, "DD/MM/YYYY"))
+                Number(moment(b.date, "DD/MM/YYYY")) -
+                Number(moment(a.date, "DD/MM/YYYY"))
             )
             .map((post, index) => (
               <PostCardMedium key={index} post={post} />
@@ -54,7 +22,7 @@ const Home = ({ posts }) => {
       </section>
       <section className="home__links">
         <SectionCard title="Artículos externos">
-          {externalPosts
+          {external_posts
             .sort(
               (a, b) =>
                 Number(moment(b.date, "DD/MM/YYYY")) -
@@ -76,7 +44,12 @@ const Home = ({ posts }) => {
                   }}
                 />
 
-                <a className="global__link" target={"_blank"} rel="noreferrer" href={post.url}>
+                <a
+                  className="global__link"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  href={post.url}
+                >
                   {post.title}
                 </a>
               </div>
@@ -88,21 +61,13 @@ const Home = ({ posts }) => {
 };
 
 export const getStaticProps = async () => {
-  const files = fs.readdirSync(path.join("posts"));
-  const posts = files.map((filename) => {
-    const markdownWithMeta = fs.readFileSync(
-      path.join("posts", filename),
-      "utf-8"
-    );
-    const { data: frontMatter } = matter(markdownWithMeta);
-    return {
-      frontMatter,
-      slug: filename.split(".")[0],
-    };
-  });
+  const posts = await getPosts();
+  const external_posts = await getExternalPosts();
+
   return {
     props: {
       posts,
+      external_posts,
     },
   };
 };
