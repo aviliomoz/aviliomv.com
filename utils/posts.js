@@ -4,7 +4,8 @@ export const getPosts = async () => {
   try {
     const { data: posts, error } = await supabase
       .from("posts")
-      .select("title,description,date,cover,slug,status");
+      .select("title,description,date,cover,slug,status")
+      .eq("status", true);
 
     if (error) throw new Error(error.message);
 
