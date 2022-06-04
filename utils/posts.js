@@ -35,7 +35,8 @@ export const getExternalPosts = async () => {
   try {
     const { data: posts, error } = await supabase
       .from("external_posts")
-      .select();
+      .select()
+      .eq("status", true);
 
     if (error) throw new Error(error.message);
 
