@@ -1,10 +1,19 @@
 import moment from "moment";
+import { useEffect, useState } from "react";
 
 import PostCardMedium from "../components/PostCardMedium";
 import SectionCard from "../containers/SectionCard";
 import { getPosts, getExternalPosts } from "../utils/posts";
 
-const Home = ({ posts, external_posts }) => {
+const Home = () => {
+  const [posts, setPosts] = useState([]);
+  const [external_posts, setExternalPosts] = useState([]);
+
+  useEffect(() => {
+    getPosts().then(setPosts);
+    getExternalPosts().then(setExternalPosts);
+  }, []);
+
   return (
     <div className="home">
       <section className="home__blog">
@@ -60,16 +69,16 @@ const Home = ({ posts, external_posts }) => {
   );
 };
 
-export const getStaticProps = async () => {
-  const posts = await getPosts();
-  const external_posts = await getExternalPosts();
+// export const getStaticProps = async () => {
+//   const posts = await getPosts();
+//   const external_posts = await getExternalPosts();
 
-  return {
-    props: {
-      posts,
-      external_posts,
-    },
-  };
-};
+//   return {
+//     props: {
+//       posts,
+//       external_posts,
+//     },
+//   };
+// };
 
 export default Home;
