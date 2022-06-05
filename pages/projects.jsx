@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import { getProjects } from "../utils/projects";
 
-const projects = () => {
+const projectsPage = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -26,4 +26,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default projectsPage;
