@@ -8,6 +8,7 @@
 @import "./components/MenuMain.css";
 @import "./components/MenuTags.css";
 @import "./components/MenuContact.css";
+@import "./components/ProjectCard.css";
 
 /* Containers */
 @import "./containers/Layout.css";

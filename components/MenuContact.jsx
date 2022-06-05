@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+  FaEnvelope,
+} from "react-icons/fa";
 
 const MenuContact = () => {
   return (
@@ -22,7 +28,9 @@ const MenuContact = () => {
           <div className="menu-contact__icon">
             <FaInstagram style={{ color: "#cd2c80" }} />
           </div>
-          <Link href="https://www.instagram.com/aviliomunoz/?hl=es">Instagram</Link>
+          <Link href="https://www.instagram.com/aviliomunoz/?hl=es">
+            Instagram
+          </Link>
         </li>
         <li>
           <div className="menu-contact__icon">
@@ -31,6 +39,12 @@ const MenuContact = () => {
           <Link href="https://www.linkedin.com/in/avilio-mu%C3%B1oz-vilchez-173672237/">
             LinkedIn
           </Link>
+        </li>
+        <li>
+          <div className="menu-contact__icon">
+            <FaEnvelope style={{ color: "#cbd5e1" }} />
+          </div>
+          <Link href="mailto:ajmv2000@gmail.com">Email</Link>
         </li>
       </ul>
     </section>

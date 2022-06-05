@@ -4,11 +4,17 @@ import Image from "next/image";
 import CodeBlock from "../../components/CodeBlock";
 import { getPostBySlug, getPosts } from "../../utils/posts";
 import { getImageURL } from "../../utils/images";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
+
+import "katex/dist/katex.min.css";
 
 const PostPage = ({ post }) => {
   return (
     <div className="post-page">
       <ReactMarkdown
+        remarkPlugins={[remarkMath]}
+        rehypePlugins={[rehypeKatex]}
         components={{
           code: CodeBlock,
           li: (li) => (
