@@ -15,7 +15,10 @@ const projects = () => {
     <div className="projects">
       {projects &&
         projects
-          .sort((a, b) => Number(moment(b.year)) - Number(moment(a.year)))
+          .sort(
+            (a, b) =>
+              Number(moment(b.year, "YYYY")) - Number(moment(a.year, "YYYY"))
+          )
           .map((project) => {
             return <ProjectCard key={project.id} project={project} />;
           })}
