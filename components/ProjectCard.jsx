@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const fields = [
   { name: "Participación", prop: "participation" },
   { name: "Tipo", prop: "type" },
@@ -7,7 +9,6 @@ const fields = [
   { name: "Año", prop: "year" },
   { name: "Centro de estudios", prop: "study_center" },
   { name: "Observación", prop: "observation" },
-  { name: "Enlace", prop: "link" },
 ];
 
 const ProjectCard = ({ project }) => {
@@ -24,6 +25,14 @@ const ProjectCard = ({ project }) => {
           )
         );
       })}
+      {project.link && (
+        <p>
+          <span>Enlace: </span>
+          <Link href={project.link}>
+            <a target="_blank" style={{ color: "#0093AB" }}>Disponible aquí</a>
+          </Link>
+        </p>
+      )}
       <hr
         style={{
           margin: "20px 0px",
