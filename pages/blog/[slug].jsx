@@ -1,15 +1,29 @@
 import ReactMarkdown from "react-markdown";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 import CodeBlock from "../../components/CodeBlock";
-import { getPostBySlug, getPosts } from "../../utils/posts";
+import { getPostBySlug } from "../../utils/posts";
 import { getImageURL } from "../../utils/images";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 
 import "katex/dist/katex.min.css";
+import { useState } from "react";
+import { useEffect } from "react";
 
-const PostPage = ({ post }) => {
+const PostPage = () => {
+  const router = useRouter();
+  const { slug } = router.query;
+
+  const [post, setPost] = useState(null);
+
+  useEffect(() => {
+    slug && getPostBySlug(slug).then(setPost);
+  }, [slug]);
+
+  if (!post) return <></>;
+
   return (
     <div className="post-page">
       <ReactMarkdown
@@ -60,26 +74,26 @@ const PostPage = ({ post }) => {
   );
 };
 
-export const getStaticPaths = async () => {
-  const posts = await getPosts();
-  const paths = posts.map((post) => ({
-    params: {
-      slug: post.slug,
-    },
-  }));
-  return {
-    paths,
-    fallback: false,
-  };
-};
+// export const getStaticPaths = async () => {
+//   const posts = await getPosts();
+//   const paths = posts.map((post) => ({
+//     params: {
+//       slug: post.slug,
+//     },
+//   }));
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// };
 
-export const getStaticProps = async ({ params: { slug } }) => {
-  const post = await getPostBySlug(slug);
-  return {
-    props: {
-      post,
-    },
-  };
-};
+// export const getStaticProps = async ({ params: { slug } }) => {
+//   const post = await getPostBySlug(slug);
+//   return {
+//     props: {
+//       post,
+//     },
+//   };
+// };
 
 export default PostPage;
