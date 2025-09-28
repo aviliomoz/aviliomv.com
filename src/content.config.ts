@@ -13,6 +13,7 @@ const blog = defineCollection({
         pubDate: z.string(),
         imagePath: z.string(),
         relatedPosts: z.array(z.string()).optional(),
+        categories: z.array(z.string()).optional(),
     })
 });
 

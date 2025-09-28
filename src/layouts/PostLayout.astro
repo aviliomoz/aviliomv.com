@@ -34,7 +34,10 @@ const relatedPosts =
         <meta name="author" content="Avilio Muñoz Vilchez" />
         <meta
             name="keywords"
-            content={title.split(" ").filter(word => word.length > 3).join(", ")}
+            content={title
+                .split(" ")
+                .filter((word) => word.length > 3)
+                .join(", ")}
         />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
@@ -47,7 +50,7 @@ const relatedPosts =
     <body class="max-w-2xl mx-auto my-8 px-8 bg-stone-50">
         <header class="border-b border-b-stone-300 mt-4 pb-4 prose">
             <a
-                href="/blog"
+                href="/"
                 class="text-sm text-stone-500 no-underline flex items-center gap-1"
                 ><Icon name={"arrow-left"} /> Volver</a
             >
