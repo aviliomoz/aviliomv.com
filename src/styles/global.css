@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+@import "tailwindcss";
+@plugin '@tailwindcss/typography';
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #f9f9f9;
+  color: oklch(26.8% 0.007 34.298);
+}

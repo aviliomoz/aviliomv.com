@@ -1,0 +1,20 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+import {format} from '@formkit/tempo';
+import PostCard from "../../components/PostCard.astro";
+
+const posts = (await getCollection("blog")).sort((a, b) =>
+	new Date(a.data.pubDate) < new Date(b.data.pubDate) ? 1 : -1
+);
+---
+
+<Layout title="Blog">
+	<div class="flex flex-col gap-2">
+		{
+			posts.map((post) => (
+				<PostCard post={post} />
+			))
+		}
+	</div>
+</Layout>

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Bloquea rutas internas que no quieres indexar (ejemplo panel admin o APIs)
+Disallow: /admin/
+Disallow: /api/
+
+# Tu sitemap, para que Google lo encuentre fácil
+Sitemap: https://aviliomv.com/sitemap-index.xml
