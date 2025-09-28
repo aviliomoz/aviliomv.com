@@ -12,9 +12,5 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
 
-  redirects: {
-    "/": "/blog/"
-  },
-
   integrations: [icon(), react(), sitemap()]
 });
