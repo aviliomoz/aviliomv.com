@@ -34,7 +34,7 @@ const relatedPosts =
         <meta name="author" content="Avilio Muñoz Vilchez" />
         <meta
             name="keywords"
-            content="blog, personal, avilio, muñoz, economista, abogado, ciencia, investigación"
+            content={title.split(" ").filter(word => word.length > 3).join(", ")}
         />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
