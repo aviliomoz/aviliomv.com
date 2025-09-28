@@ -1,5 +1,6 @@
 ---
 import { format } from "@formkit/tempo";
+import { Image } from "astro:assets";
 const { post } = Astro.props;
 ---
 
@@ -23,10 +24,12 @@ const { post } = Astro.props;
     <div
         class="w-full md:w-80 h-44 md:h-full rounded-lg overflow-hidden border-4 border-white shadow-sm"
     >
-        <img
+        <Image
             src={post.data.imagePath}
             alt={post.data.title}
             class="w-full h-full object-fill"
+            width={320}
+            height={176}
         />
     </div>
 </a>

@@ -4,6 +4,7 @@ import { Icon } from "astro-icon/components";
 import { getCollection } from "astro:content";
 import { ClientRouter } from "astro:transitions";
 import PostCard from "../components/PostCard.astro";
+import { Image } from "astro:assets";
 
 type Props = {
     title: string;
@@ -70,7 +71,13 @@ const relatedPosts =
             <div
                 class="border border-stone-200 rounded-md p-4 mt-6 w-full flex flex-col md:flex-row gap-3 md:gap-6"
             >
-                <img src="/foto-papi-ia-cara.jpg" class="rounded-lg w-3/12" />
+                <Image
+                    src="/foto-papi-ia-cara.jpg"
+                    class="rounded-lg w-3/12"
+                    alt="Avatar"
+                    width={96}
+                    height={96}
+                />
                 <div class="md:w-9/12">
                     <h4 class="font-bold text-xl mb-2">Avilio Muñoz Vilchez</h4>
                     <div class="text-sm text-stone-700">

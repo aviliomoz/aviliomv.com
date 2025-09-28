@@ -11,29 +11,27 @@ const PROYECTOS = await getCollection("proyectos");
         {
             PROYECTOS.sort((a, b) => (a.data.año < b.data.año ? 1 : -1)).map(
                 ({ data: proyecto }) => (
-                    <article class="border border-stone-200 bg-white rounded-md p-4 w-full flex flex-col-reverse md:flex-row gap-6 hover:shadow-sm transition-all">
-                        <div class="flex flex-col w-full md:w-8/12">
-                            <span class="text-xs text-stone-500 mb-3">
-                                {proyecto.año} - {proyecto.institucion}
-                            </span>
-                            <h3 class="font-black text-lg md:truncate md:line-clamp-2 md:text-wrap">
-                                {proyecto.titulo}
-                            </h3>
-                            <p class="text-sm text-stone-600 mt-2 mb-3">
-                                {proyecto.autor} - {proyecto.rol} -{" "}
-                                {proyecto.tipo} - {proyecto.programa}.
-                            </p>
-                            {proyecto.url && (
-                                <a
-                                    href={proyecto.url}
-                                    target="_blank"
-                                    class="text-sm text-stone-600 mt-2 mb-3 flex items-center gap-2"
-                                >
-                                    <Icon name="external-link" size={16} />
-                                    Visitar proyecto
-                                </a>
-                            )}
-                        </div>
+                    <article class="border border-stone-200 bg-white rounded-md p-4 w-full flex flex-col gap-2 hover:shadow-sm transition-all">
+                        <span class="text-xs text-stone-500">
+                            {proyecto.año} - {proyecto.institucion}
+                        </span>
+                        <h3 class="font-black text-lg md:truncate md:line-clamp-2 md:text-wrap">
+                            {proyecto.titulo}
+                        </h3>
+                        <p class="text-sm text-stone-600">
+                            {proyecto.autor} - {proyecto.rol} - {proyecto.tipo}{" "}
+                            - {proyecto.programa}.
+                        </p>
+                        {proyecto.url && (
+                            <a
+                                href={proyecto.url}
+                                target="_blank"
+                                class="text-sm text-stone-600 mt-4 flex items-center gap-2"
+                            >
+                                <Icon name="external-link" size={16} />
+                                Visitar proyecto
+                            </a>
+                        )}
                     </article>
                 ),
             )
