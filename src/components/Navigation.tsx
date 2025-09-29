@@ -3,9 +3,9 @@ import { Menu } from "lucide-react";
 
 const links = [
   { name: "Blog", href: "/", base: "/blog" },
-  { name: "Sobre mí", href: "/sobre-mi", base: "/sobre-mi" },
-  { name: "Proyectos", href: "/proyectos", base: "/proyectos" },
-  { name: "Otras publicaciones", href: "/publicaciones", base: "/publicaciones" },
+  { name: "Sobre mí", href: "/about", base: "/about" },
+  { name: "Proyectos", href: "/projects", base: "/projects" },
+  { name: "Otras publicaciones", href: "/publications", base: "/publications" },
 ];
 
 type Props = {
