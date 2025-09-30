@@ -6,4 +6,4 @@ Disallow: /admin/
 Disallow: /api/
 
 # Tu sitemap, para que Google lo encuentre fácil
-Sitemap: https://aviliomv.com/sitemap-index.xml
+Sitemap: https://www.aviliomv.com/sitemap-index.xml
