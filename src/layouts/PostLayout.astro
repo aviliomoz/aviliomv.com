@@ -3,8 +3,8 @@ import { format } from "@formkit/tempo";
 import { Icon } from "astro-icon/components";
 import { getCollection } from "astro:content";
 import { ClientRouter } from "astro:transitions";
-import PostCard from "../components/PostCard.astro";
 import { Image } from "astro:assets";
+import PostCard from "../components/PostCard.astro";
 
 type Props = {
     title: string;
@@ -45,6 +45,7 @@ const relatedPosts =
         <meta property="og:url" content={href} />
         <title>{`${title} - Avilio Muñoz V.`}</title>
         <link rel="icon" type="image/svg" href="/favicon.svg" />
+        <link rel="canonical" href={href} />
         <ClientRouter />
     </head>
     <body class="max-w-2xl mx-auto my-8 px-8 bg-stone-50">

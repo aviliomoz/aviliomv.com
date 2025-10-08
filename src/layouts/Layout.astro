@@ -10,7 +10,7 @@ type Props = {
 };
 
 const { title } = Astro.props;
-const { pathname } = Astro.url;
+const { pathname, href } = Astro.url;
 ---
 
 <html lang="es">
@@ -28,7 +28,7 @@ const { pathname } = Astro.url;
         />
         <title>Avilio Muñoz - {title}</title>
         <link rel="icon" type="image/svg" href="/favicon.svg" />
-        <link rel="canonical" href="https://www.aviliomv.com/">
+        <link rel="canonical" href={href} />
         <ClientRouter />
     </head>
     <body
