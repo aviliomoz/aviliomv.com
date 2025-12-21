@@ -1,7 +1,7 @@
 ---
 title: "Impacto de la IA en la investigación: actualizarse o quedar rezagado"
 description: "La IA no reemplaza al investigador, pero el investigador que usa IA reemplazará al que no lo hace. Descubre cómo la Inteligencia Artificial está transformando la metodología de la investigación."
-pubDate: "2025-12-20"
+pubDate: "2025-12-22"
 imagePath: "/assets/IA-en-investigación-miniatura.jpeg"
 relatedPosts: ["desenmascarando-el-fraude-academico"]
 ---
@@ -24,12 +24,12 @@ A diferencia de motores como Google Scholar, que dependen en gran medida de la c
 
 **¿Cómo funciona la búsqueda semántica?** Ya no se necesita adivinar qué términos usó un autor. Por ejemplo, puedes preguntar: ¿Cuál es el impacto de la inteligencia artificial en la generación de conocimiento? y la IA buscará conceptos, no solo palabras, recuperando estudios que usen sinónimos o términos relacionados que antes habrían quedado ocultos.
 
-En la actualidad, herramientas como **Consensus** o **Elicit**, son motores que no solo listan artículos, sino que extraen directamente de ellos el hallazgo principal, la metodología y el tamaño de la muestra, permitiendo una comparativa inmediata.
+En la actualidad, herramientas como [Consensus](https://consensus.app/) o [Elicit](https://elicit.com/), son motores que no solo listan artículos, sino que extraen directamente de ellos el hallazgo principal, la metodología y el tamaño de la muestra, permitiendo una comparativa inmediata.
 
 ### 1.2. El Mapeo de redes y la visualización de conocimiento
 Uno de los mayores avances es la capacidad de visualizar la ciencia como una **red interconectada**; pues, en lugar de leer listas de resultados, ahora podemos ver **"mapas"** de conocimiento.
 
-Por ejemplo, herramientas como **ResearchRabbit**, **Connected Papers** y **Litmaps** funcionan como un "Spotify para la ciencia". Al añadir un artículo base o *seed paper*, la IA analiza las citas y referencias para sugerir otros trabajos esenciales que pertenecen a la misma línea de investigación.
+Por ejemplo, herramientas como [ResearchRabbit](https://www.researchrabbit.ai/), [Connected Papers](https://www.connectedpapers.com/) y [Litmaps](https://www.litmaps.com/) funcionan como un "Spotify para la ciencia". Al añadir un artículo base o *seed paper*, la IA analiza las citas y referencias para sugerir otros trabajos esenciales que pertenecen a la misma línea de investigación.
 
 En consecuencia, al introducir un artículo base en estas herramientas,  generan un **mapa visual de trabajos similares**, ayudando a identificar de inmediato cuáles son los estudios más influyentes y cómo se relacionan entre sí, asegurando que no dejes fuera ningún autor clave por un simple error de búsqueda.
 
@@ -42,7 +42,7 @@ Otra característica de estos mapas de redes es la eliminación del sesgo de fec
 ### 1.3. La validación de la evidencia (*Smart Citations*)
 No todos los artículos citados tienen el mismo peso, por consiguiente, la IA ahora permite auditar la calidad de la bibliografía de forma automática.
 
-En tal sentido, herramientas como **scite_** permiten descubrir y evaluar artículos científicos mediante **citas inteligentes**,  ofreciendo la posibilidad de ver si un artículo ha sido citado para ser apoyado o contrastado. Esto es revolucionario, porque evita que el investigador cite un estudio que ha sido refutado o que tiene resultados controvertidos, elevando la solidez científica del nuevo manuscrito.
+En tal sentido, herramientas como [scite_](https://scite.ai/) permiten descubrir y evaluar artículos científicos mediante **citas inteligentes**,  ofreciendo la posibilidad de ver si un artículo ha sido citado para ser apoyado o contrastado. Esto es revolucionario, porque evita que el investigador cite un estudio que ha sido refutado o que tiene resultados controvertidos, elevando la solidez científica del nuevo manuscrito.
 
 Sin embargo, es importante advertir que la automatización no elimina la necesidad de **lectura analítica**, en el sentido de que la IA filtra el ruido para mostrar señales depuradas, pero es el **juicio del investigador** el que decide si esa señal es relevante para su hipótesis particular.
 
@@ -50,7 +50,7 @@ Sin embargo, es importante advertir que la automatización no elimina la necesid
 El análisis de datos ha dejado de ser una fase de **procesamiento** para convertirse en una fase de **descubrimiento asistido**; pues, mientras que la estadística tradicional se centra en probar hipótesis predefinidas, la IA permite que los datos **hablen por sí mismos**, revelando patrones que hubiese sido difícil detectar con los métodos tradicionales.
 
 ### 2.1. Revolución cualitativa
-Procesos como analizar entrevistas, grupos focales o documentos extensos requería que el investigador leyera y etiquetara cada frase de forma manual. En cambio, gracias a la **codificación automática** con NLP, a través del Procesamiento de Lenguaje Natural, existen herramientas como **ATLAS.ti** o **NVivo** que pueden analizar cientos de páginas de texto en segundos. 
+Procesos como analizar entrevistas, grupos focales o documentos extensos requería que el investigador leyera y etiquetara cada frase de forma manual. En cambio, gracias a la **codificación automática** con NLP, a través del Procesamiento de Lenguaje Natural, existen herramientas como [ATLAS.ti](https://atlasti.com/es) o [NVivo](https://www.nvivo-spain.com/) que pueden analizar cientos de páginas de texto en segundos. 
 
 En estos casos, la IA identifica **temas recurrentes, sentimientos y relaciones conceptuales**, proponiendo una estructura de códigos inicial que el investigador solo debe refinar. Por lo tanto, ya no solo sabemos qué se dice, sino cómo se dice. La IA detecta matices emocionales y sarcasmo, algo relevante en investigaciones de psicología, sociología, economía o marketing.
 
@@ -80,7 +80,7 @@ Dado que sugieren una relación de dependencia falsa, estas correlaciones son un
 
 En la actualidad, el procesamiento de grandes volúmenes de datos exige mecanismos de análisis avanzados que optimicen la labor investigativa y minimicen los márgenes de error. En este contexto, podríamos decir que la estadística tradicional equivale a observar los datos con una **lupa**, mientras que la inteligencia artificial nos permite examinarlos bajo un **microscopio electrónico**.
 
-Para quienes buscan llevar su análisis al siguiente nivel, el dominio de lenguajes como **Python** o **R** se ha vuelto casi indispensable. Además, gracias a herramientas como **Pandas** (para el manejo masivo de datos) o **Scikit-learn** (para implementar modelos de aprendizaje automático), los investigadores pueden hoy analizar en minutos lo que antes tomaba semanas o incluso meses, abriendo la puerta a hallazgos que antes eran invisibles para la estadística tradicional.
+Para quienes buscan llevar su análisis al siguiente nivel, el dominio de lenguajes como [Python](https://www.python.org/) o [R](https://www.r-project.org/) se ha vuelto casi indispensable. Además, gracias a herramientas como [Pandas](https://pandas.pydata.org/) (para el manejo masivo de datos) o [Scikit-learn](https://scikit-learn.org/stable/) (para implementar modelos de aprendizaje automático), los investigadores pueden hoy analizar en minutos lo que antes tomaba semanas o incluso meses, abriendo la puerta a hallazgos que antes eran invisibles para la estadística tradicional.
 
 Al respecto, conviene precisar que, aunque R y Python son lenguajes de programación y no constituyen una IA en sí mismos, como lo sería ChatGPT, actúan como las plataformas donde los científicos desarrollan y entrenan dichos modelos. Gracias a ecosistemas como caret, tidymodels o tensorflow, R es capaz de ejecutar redes neuronales y *Machine Learning* de altísimo nivel.
 
@@ -91,21 +91,21 @@ La fase de escritura ya no se limita a un procesador de texto pasivo. Actualment
 
 Existen diversas herramientas que ofrecen oportunidades para desarrollar textos de manera más fácil y enriquecedora a partir de la información fundamental suministrada por el usuario.
 
-Por ejemplo, **Jenni AI** y **Typeset (SciSpace)** son herramientas que permiten generar borradores basados en la información que se proporciona. Estas ayudan a expandir argumentos, resumir párrafos densos o sugerir la siguiente oración basándose en el contexto académico, evitando el síndrome de la hoja en blanco.
+Por ejemplo, [Jenni AI](https://jenni.ai/es/) y [SciSpace](https://scispace.com/es) son herramientas que permiten generar borradores basados en la información que se proporciona. Estas ayudan a expandir argumentos, resumir párrafos densos o sugerir la siguiente oración basándose en el contexto académico, evitando el síndrome de la hoja en blanco.
 
-Asimismo, a diferencia de los traductores simples, herramientas como **Writefull** ayudan a reformular oraciones para que suenen más profesionales, manteniendo el rigor terminológico necesario en las ciencias, a través de la correcta redacción de textos científicos y académicos en inglés, con tecnología basada en inteligencia artificial.
+Asimismo, a diferencia de los traductores simples, herramientas como [Writefull](https://www.writefull.com/) ayudan a reformular oraciones para que suenen más profesionales, manteniendo el rigor terminológico necesario en las ciencias, a través de la correcta redacción de textos científicos y académicos en inglés, con tecnología basada en inteligencia artificial.
 
-Por otro lado, **Paperpal** es una herramienta que ha sido entrenada con millones de manuscritos editados por profesionales, la cual no solo corrige errores gramaticales, sino que sugiere cambios en el tono y verifica el uso de un vocabulario científico estándar.
+Por otro lado, [Paperpal](https://paperpal.com/) es una herramienta que ha sido entrenada con millones de manuscritos editados por profesionales, la cual no solo corrige errores gramaticales, sino que sugiere cambios en el tono y verifica el uso de un vocabulario científico estándar.
 
-**DeepL Write**, por su parte, se distancia de la IA generativa tradicional al actuar como un asistente de refinamiento en tiempo real. Más allá de corregir errores, sugiere cambios en el tono y la formulación para elevar la calidad de la escritura, convirtiéndose en una herramienta de co-creación que optimiza la claridad del manuscrito asegurando que el estilo personal del autor no se pierda en el proceso.
+[DeepL Write](https://www.deepl.com/es/write), por su parte, se distancia de la IA generativa tradicional al actuar como un asistente de refinamiento en tiempo real. Más allá de corregir errores, sugiere cambios en el tono y la formulación para elevar la calidad de la escritura, convirtiéndose en una herramienta de co-creación que optimiza la claridad del manuscrito asegurando que el estilo personal del autor no se pierda en el proceso.
 
-En otro contexto, el error más común que lleva al rechazo de un artículo es una bibliografía mal estructurada o citas que no corresponden al texto. Para esto, **Zotero** y **Mendeley** son gestores bibliográficos que ahora integran complementos que leen el manuscrito y advierten si se ha olvidado citar una afirmación importante o si el formato de la referencia tiene errores según la norma seleccionada.
+En otro contexto, el error más común que lleva al rechazo de un artículo es una bibliografía mal estructurada o citas que no corresponden al texto. Para esto, [Zotero](https://www.zotero.org/) y [Mendeley](https://www.mendeley.com/) son gestores bibliográficos que ahora integran complementos que leen el manuscrito y advierten si se ha olvidado citar una afirmación importante o si el formato de la referencia tiene errores según la norma seleccionada.
 
-También se cuenta con plataformas para la detección preventiva de plagio como **Turnitin**, solo por mencionar una de tantas, la cual no solo funciona como un detector de copias, sino como una herramienta que ha tenido que reinventarse para enfrentar el desafío del contenido generado por máquinas.
+También se cuenta con plataformas para la detección preventiva de plagio como [Turnitin](https://latam.turnitin.com/), solo por mencionar una de tantas, la cual no solo funciona como un detector de copias, sino como una herramienta que ha tenido que reinventarse para enfrentar el desafío del contenido generado por máquinas.
 
-Turnitin no solo busca coincidencias en Google, también extiende su búsqueda a repositorios institucionales, publicaciones científicas, entre otras. Recientemente, Turnitin lanzó **AI Writing Detection**, cuyo mecanismo no solo busca copias exactas o plagio, sino **huellas digitales** de los modelos de lenguaje como ChatGPT. Además, analiza la ****perplejidad**, es decir, qué tan predecible es el texto; así como la **vistosidad**, que se refiere a la variación en la estructura de las oraciones.
+Turnitin no solo busca coincidencias en Google, también extiende su búsqueda a repositorios institucionales, publicaciones científicas, entre otras. Recientemente, Turnitin lanzó [AI Writing Detection](https://latam.turnitin.com/soluciones/temas/escritura-con-ia/deteccion-de-inteligencia-artificial/), cuyo mecanismo no solo busca copias exactas o plagio, sino **huellas digitales** de los modelos de lenguaje como ChatGPT. Además, analiza la ****perplejidad**, es decir, qué tan predecible es el texto; así como la **vistosidad**, que se refiere a la variación en la estructura de las oraciones.
 
-Junto a AI Writing Detection, destacan plataformas como **GPTZero**, **Copyleaks**, **Winston AI** y **Originality AI**, que ofrecen funciones de verificación similares. Algunas de ellas van un paso más allá de la identificación de textos, dado que su tecnología también permite detectar imágenes generadas por inteligencia artificial, ofreciendo una solución de integridad más completa.
+Junto a AI Writing Detection, destacan plataformas como [GPTZero](https://gptzero.me/), [Copyleaks](https://copyleaks.com/es/), [Winston AI](https://gowinston.ai/) y [Originality AI](https://originality.ai/), que ofrecen funciones de verificación similares. Algunas de ellas van un paso más allá de la identificación de textos, dado que su tecnología también permite detectar imágenes generadas por inteligencia artificial, ofreciendo una solución de integridad más completa.
 
 Como punto final a esta sección, es importante destacar que los textos generados por IA pueden contener datos o citas falsos, comúnmente llamadas alucinaciones, lo cual puede arruinar una reputación académica. Por ello, se debe ser muy **responsable con el uso de la IA en la redacción de contenido científico**. 
 
@@ -152,9 +152,9 @@ La Inteligencia Artificial no ha venido a sustituir al científico, sino a **lib
 
 Sin temor a equivocaciones, hemos llegado a un **punto de no retorno**. La pregunta ya no es si la Inteligencia Artificial debe usarse en la ciencia, sino cómo hacerlo con maestría y responsabilidad. **La verdadera revolución no reside en el software, sino en la evolución del pensamiento del investigador**.
 
-Por todo lo afirmado, es razonable pensar que el futuro pertenece al **investigador híbrido**, aquel profesional que combina la intuición y el rigor crítico humano con la capacidad masiva de procesamiento de la IA. 
+Por todo lo afirmado, es razonable pensar que el futuro pertenece al **investigador híbrido**, aquel profesional que combina la intuición y el rigor crítico humano con la capacidad masiva de procesamiento de la IA. Sobre esto, ya algunos especialistas están discutiendo acerca de la **inteligencia híbrida**, consistente en la convergencia de la inteligencia humana y la inteligencia artificial.
 
-Actualizarse no significa delegar nuestra curiosidad a un algoritmo, sino liberar nuestra mente de las tareas mecánicas para dedicarnos a lo que las máquinas aún no pueden hacer: conectar ideas, formular preguntas éticas, reflexionar y transformar datos en sabiduría.
+Actualizarse no significa delegar nuestra curiosidad a un algoritmo, sino liberar nuestra mente de las tareas mecánicas para dedicarnos a lo que las máquinas aún no pueden hacer: conectar ideas, formular preguntas éticas, reflexionar, crear, imaginar y transformar datos en sabiduría.
 
 Como reflexión final: **La IA es el viento a favor, pero el investigador sigue siendo el capitán del barco**.
 
